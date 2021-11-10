@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(187, 148, 89);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    position: relative;  
+    width: 100%;
+    border-radius: 15%;
+    border: 5px solid rgb(124, 93, 52);
+    cursor: pointer;
+    transition: all 300ms;  
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+
+
+.flex-container {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 25%;
+    padding: 10px;
+
+}
+
+.column img {
+    margin: 10px;
+
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;    
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+        flex: 100%;    
+    }
+}
